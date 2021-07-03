@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-const text_Style = TextStyle(
-  fontSize: 18.0,
-  color: Color(0xFF8D8E98),
-);
+import 'constants.dart';
 
 class ReusableColumn extends StatelessWidget {
-
   ReusableColumn({@required this.icon, @required this.text});
 
   final IconData icon;
@@ -18,12 +13,17 @@ class ReusableColumn extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        FaIcon(icon, size: 60.0, color: Colors.white,),
+        FaIcon(
+          icon,
+          size: 60.0,
+          color: Colors.white,
+        ),
         SizedBox(
           height: 15.0,
         ),
-        Text(text,
-          style: text_Style,
+        Text(
+          text,
+          style: kText_Style,
         ),
       ],
     );
