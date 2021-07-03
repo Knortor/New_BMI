@@ -8,6 +8,7 @@ enum Gender {
   male,
   female,
 }
+// TODO: check the commit or update project is enough
 
 class InputPage extends StatefulWidget {
   @override
