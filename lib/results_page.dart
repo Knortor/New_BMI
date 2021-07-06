@@ -1,9 +1,13 @@
 import 'package:bmi_calculator/reusableCard.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
+import 'calculator_bmi.dart';
 
 class ResultsPage extends StatelessWidget {
-  const ResultsPage({Key key}) : super(key: key);
+  ResultsPage({this.bmiResults, this.bmiCategory});
+
+  final String bmiResults;
+  final String bmiCategory;
 
   @override
   Widget build(BuildContext context) {
@@ -24,14 +28,14 @@ class ResultsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
-                    'NORMAL',
+                    bmiCategory,
                     style: TextStyle(
                       color: Colors.green,
                       fontSize: 20.0,
                     ),
                   ),
                   Text(
-                    '19.2',
+                    bmiResults,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 80.0,
