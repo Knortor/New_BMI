@@ -4,10 +4,11 @@ import 'constants.dart';
 import 'calculator_bmi.dart';
 
 class ResultsPage extends StatelessWidget {
-  ResultsPage({this.bmiResults, this.bmiCategory});
+  ResultsPage({this.bmiResults, this.bmiCategory, this.bmiAdvice});
 
   final String bmiResults;
   final String bmiCategory;
+  final String bmiAdvice;
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +43,7 @@ class ResultsPage extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'You have a normal body weight. \nGood job!',
+                    bmiAdvice,
                     style: TextStyle(
                       fontSize: 20.0,
                     ),

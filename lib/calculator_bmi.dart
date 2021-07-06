@@ -23,4 +23,14 @@ class Calculator {
       return 'Underweight';
     }
   }
+
+  bmiToDo() {
+    if (_bmi >= 25) {
+      return 'You fat little piggy, go train!!';
+    } else if (_bmi >= 18.5) {
+      return 'Gogo gadget six pack, woop woop.';
+    } else {
+      return 'WOOOOHOOOOW, you can eat whatever you want damn that should feel nice... but you should do it.';
+    }
+  }
 }

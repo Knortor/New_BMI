@@ -242,6 +242,7 @@ class _InputPageState extends State<InputPage> {
                       builder: (context) => ResultsPage(
                             bmiResults: calc.calculateBMI(),
                             bmiCategory: calc.bmiCategory(),
+                            bmiAdvice: calc.bmiToDo(),
                           )));
             },
             child: Container(
