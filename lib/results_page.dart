@@ -1,4 +1,5 @@
 import 'package:bmi_calculator/reusableCard.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'calculator_bmi.dart';
@@ -42,12 +43,15 @@ class ResultsPage extends StatelessWidget {
                       fontSize: 80.0,
                     ),
                   ),
-                  Text(
-                    bmiAdvice,
-                    style: TextStyle(
-                      fontSize: 20.0,
+                  Container(
+                    padding: EdgeInsets.all(10.0),
+                    child: Text(
+                      bmiAdvice,
+                      style: TextStyle(
+                        fontSize: 20.0,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                 ],
               ),
